@@ -1,0 +1,32 @@
+img{
+	width: 40%;
+	float: right;
+	margin-left: 10px;
+}
+
+ol {
+	list-style: upper-roman;
+	border: 1px solid black;
+	background: : lightblue;
+	width: 18.5%;
+	padding: 15px 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+ol li {
+	margin-bottom: 5px;
+}
+
+ div p {
+	text-indent: 40px;
+}
+
+td:hover {
+	background-color: lightgrey;
+}
+
+dl+p::first-letter {
+	font-size: 1.2em;
+	font-weight: bold;
+}

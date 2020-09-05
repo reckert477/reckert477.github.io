@@ -1,47 +1,33 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("menu-sidenav").style.width = "250px";
-    // document.getElementById("main").style.marginRight = "250px";
+//Get the button:
+mybutton = document.getElementById("top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("menu-sidenav").style.width = "0";
-    // document.getElementById("main").style.marginRight = "0";
-}
-
-
-function validateForm() {
-    var x = document.forms["searchbar"]["search"].value;
-    if (x == "") {
-        alert("Form must be filled out");
-        return false;
-    }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 
 var displayedProjects = [];
 
 
-// Create "Semester" object, which is a dictionary
-
-function Semester(code, sem, year, path) {
-	this.code = code;		// HTML address
-	this.sem = sem;			// Which semester
-	this.year = year;		// Which year
-	this.path = path		// The related JSON object
-	this.project = {};		// Empty object, which will serve as a dictionary
-}
-
 // Create "Project" object
 
-function Project(code, name, img, team, tags, semester) {
-	this.code = code;							// HTML address. Also will be used as a key
-	this.name = name;							// Project name
-	this.img = img;								// Image address/filename
-	this.team = team;							// List of people who worked on the team. Should contain the code of people objects
-	this.tags = tags;							// List of tags associated with this project
-	this.sem = semester;
+function ProjectSimple(title, subtitle, cardImage) {
+  this.title = title;
+  this.subtitle = subtitle;
+  this.image = cardImage;
 }
 
 // Create "Student" object

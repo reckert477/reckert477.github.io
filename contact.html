@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan Eckert</title>
+  <meta content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+</head>
+<body>
+
+<div id="main container-fluid">
+  <!-- Headder -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html"><h4>Ryan Eckert</h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="portfolio.html" role="button" data-toggle="dropdown">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="portfolio.html#gamedigital">Games - Digital</a>
+              <a class="dropdown-item" href="portfolio.html#gamemisc">Games - Miscellaneous</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="portfolio.html#projdigital">Projects - Digital</a>
+              <a class="dropdown-item" href="portfolio.html#projmisc">Projects - Miscellaneous</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="experience.html" role="button" data-toggle="dropdown">
+              Experience<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="experience.html#work">Work</a>
+              <a class="dropdown-item" href="experience.html#leadership">Leadership</a>
+              <a class="dropdown-item" href="experience.html#other">Other</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!-- End Header-->  
+    <div class="content">
+      <h1>Let's get in touch!</h1><br>
+      <div class="row">
+        <div class="col-4 ml-auto actionbox" id="emailbox">
+          <h2>Email</h2>
+          <form action="mail.php" method="post">
+            
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name.."><br><br>           
+
+            <label for="email">Email Address</label><br>
+            <input type="text" id="email" name="email" placeholder="Your Email Address.."><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" placeholder="Your Message.." style="height:200px"></textarea><br><br>
+
+            <input type="submit" class="btn btn-secondary" value="Submit">
+
+          </form>
+        </div>
+        <div class="col-4 mr-auto actionbox" id="resbox">
+          <h2>Resume</h2>
+          <a href="resources/Ryan Eckert 2019 Resume.pdf" role="button" download>
+            <button type="button" class="btn btn-secondary">Click to download resume</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="top" title="Go to top">Back to Top</button>
+  <!-- End Body -->
+  <!-- Footer -->    
+    <footer id="footer" class="jumbotron">
+      <div class="row">
+        <h6 class="col">Feel free to get in contact!</h6>
+      </div>
+      <div class="row">
+        <ul id="contact-options">
+          <li>
+            <a href="https://github.com/reckert477"><img src="images/github-logo-white.png"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/reck98/"><img src="images/linkedin-letters-white.png"></a>
+          </li>
+          <li>
+            <a href="mailto:reck98@gmail.com"><img src="images/envelope-white.png"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="credits">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+      
+      </div>
+      <div class="credits">&copy; 2019 by Ryan Eckert</div>
+    </footer>
+</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="js/experience.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/display.js"></script>
+</body>
+</html>

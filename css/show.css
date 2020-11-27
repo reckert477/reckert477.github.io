@@ -1,0 +1,27 @@
+.content {
+  padding-top: -5%;
+  margin-top: 5%;
+  /*margin: 5% 1.5% 5% 1.5%;*/
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.bullets {
+  display: block;
+  margin-top: 1%;
+  text-transform: capitalize;
+}
+
+.contributions {
+  
+}
+
+p {
+  /*text-indent: 2em each-line;*/
+}

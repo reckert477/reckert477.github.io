@@ -1,0 +1,38 @@
+.content {
+  
+  margin-top: 4.5%;
+  margin-bottom: 2.5%;
+  
+}
+
+
+
+.content h1 {
+  text-align: center;
+}
+
+.actionbox {
+  padding: 2%;
+}
+
+.actionbox input {
+  width: 100%;
+}
+
+.actionbox textarea {
+  width: 100%;
+}
+
+#emailbox {
+  background-color: lightgrey;
+}
+
+#resbox {
+  background-color: #343a40;
+  color: white;
+}
+
+#footer {
+  /*position: absolute;
+  width: 100%;*/
+}

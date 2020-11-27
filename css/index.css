@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.header {
+  position: relative;
+}
+
+.header-banner {
+  width: 100%;
+
+}
+
+.buzzwords {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  opacity: 15%;
+  color: white;
+}
+
+#buzzwordswords {
+  font-weight: bolder;
+  font-size: 3.05vw;
+  margin: 1em;
+  line-height: 1.2;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+
+
+}
+
+.header-name {
+  
+}
+
+.content {
+  margin-right: 0px;
+}
+
+.content img {
+  max-width: 34%;
+}
+
+#bio {
+  border-style: dotted;
+}
+
+#about {
+  padding: 10px 25px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+h1 {
+  color: white;
+  text-shadow: 3px 3px black;
+  font-size: 8vw;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}

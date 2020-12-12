@@ -6,7 +6,7 @@ experience =
     "abtech" : {
         "title" : "AB Tech",
         "subtitle" : "Technician and Webmaster at AB Tech, which provides professional quality audiovisual support to events on campus.",
-        "cardImage" : "images/clg/cover.png",
+        "cardImage" : "images/abtech/cover.png",
         "role" : "Technician, Webmaster",
         "duration" : "August 2016 - Current",
         "overview" : "",
@@ -15,12 +15,12 @@ experience =
 
     "mstco" : {
         "title" : "Majuro Stevedore and Terminal Company",
-        "subtitle" : "Technical consultant tasked with improving MSTCO's database operations.",
-        "cardImage" : "images/clg/cover.png",
+        "subtitle" : "Technical consultant in the Marshall Islands aiming to extend MSTCO's database capabilities.",
+        "cardImage" : "images/mstco/logo.jpg",
         "role" : "Technical Consultant",
-        "duration" : "June 2019 - August 2019",
-        "overview" : "",
-        "responsibilities" : ""
+        "team" : "2 people",
+        "timeline" : "10 weeks",
+        "technologies" : "Microsoft Access"
     },
 
     "cmuml" : {
@@ -63,6 +63,16 @@ experience =
 
 "other" : {
 
+    "animestuco" : {
+        "title" : "CMU StuCo instructor: Anime",
+        "subtitle" : "Volunteer at Fanime, San Jose's annual Anime convention.",
+        "cardImage" : "images/clg/cover.png",
+        "role" : "Technician",
+        "duration" : "May 2018 - Current",
+        "overview" : "",
+        "responsibilities" : ""
+
+    },
 
     "fanime" : {
         "title" : "Fanime Tech",

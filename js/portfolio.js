@@ -20,22 +20,24 @@ portfolio =
         "role" : "Lead Engineer/Backend Engineer, Game Designer",
         "team" : "5 people",
         "timeline" : "8 months",
-        "technologies" : "Unity, MySQL"      
+        "technologies" : "Unity, MySQL Workbench",
+        "goal" : "Teach guests the linguistical nuances of Chinese through an interactive experience."      
     },
 
     "badmintonsim" : {
         "title" : "VR Badminton",
         "subtitle" : "Translating badmingon into a VR space utilizing the exergame framework",
         "cardImage" : "images/badminton/cover.jpg",
-        "role" : "FX Programmer, Sound Designer",
-        "team" : "6 people",
-        "timeline" : "5 weeks",
-        "technologies" : "Unity, Occulus Rift"
+        "role" : "Programmer, Sound Designer",
+        "team" : "4 people",
+        "timeline" : "10 weeks",
+        "technologies" : "Unity, Occulus Rift",
+        "goal" : "Teach guests the linguistical nuances of Chinese through an interactive experience."
     },
 
     "springcleaning" : {
         "title" : "Spring Cleaning (incomplete)",
-        "subtitle" : "A VR puzzle game based around conveying information in a VR space.",
+        "subtitle" : "A VR puzzle game based around conveying information in VR spaces.",
         "cardImage" : "images/springcleaning/cover.png",
         "role" : "FX Programmer, Sound Designer",
         "team" : "6 people",

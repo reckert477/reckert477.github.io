@@ -21,16 +21,6 @@ experience =
         "team" : "2 people",
         "timeline" : "10 weeks",
         "technologies" : "Microsoft Access"
-    },
-
-    "cmuml" : {
-        "title" : "CMU Modern Languages",
-        "subtitle" : "Research assistant for a game based around teaching native Chinese.",
-        "cardImage" : "images/clg/cover.png",
-        "role" : "Lead Programmer",
-        "duration" : "June 2018 - August 2018",
-        "overview" : "",
-        "responsibilities" : ""
     }
 
 },

@@ -13,7 +13,7 @@
 .buzzwords {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
-  opacity: 85%;
+  opacity: 95%;
   color: white;
 }
 
@@ -45,9 +45,9 @@
   max-width: 34%;
 }
 
-/*#bio {
-  border-style: dotted;
-}*/
+#bio {
+  margin-left: 15px;
+}
 
 #about {
   padding: 10px 25px;
@@ -56,6 +56,8 @@
 h2 {
   font-weight: bolder;
   font-size: 4em;
+  margin-top: 40px;
+  margin-left: -25px;
 }
 
 h1 {

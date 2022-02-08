@@ -1,29 +1,38 @@
 
-// Pass in section to populare as well as the JS object containing the information
-function LoadSection(start, list) {
-  var row;
-  var left = true;
+function LoadEntries() {
+  var content = document.getElementById("container");
 
-  for (entry in list) {   
-    // console.log(entry);
-    var card;
 
-    if (left) {
-      row = CreateRow();
-      start.appendChild(row);
-      card = row.firstChild;
-    } 
-    else {
-      card = row.lastChild;
+  for (section in portfolio) {
+    console.log(section);
+    var header = document.createElement("h2");
+    header.innerHTML = section;
+    header.id = section;
+    content.appendChild(header);
+    content.appendChild(document.createElement("hr"));
+
+
+    var row;
+    var left = true;
+    for (entry in portfolio[section]) {
+      var card;
+
+      if (left) {
+        row = CreateRow();
+        content.appendChild(row);
+        card = row.firstChild;
+      } 
+      else {
+        card = row.lastChild;
+      }
+
+      CreateEntry(card, left, portfolio[section], entry);
+
+      left = !left;
     }
-
-    CreateEntry(card, left, list, entry);
-
-    left = !left;
   }
-  
-
 }
+
 
 // Creates and returns a row with two empty divs for cards
 function CreateRow() {
@@ -69,43 +78,5 @@ function CreateEntry(obj, left, list, entry) {
 
 }
 
-function LoadPage() {
-  var target = window.location.pathname;
-  if (target.includes("portfolio")) {
 
-    var section = document.getElementById("gamedigitalcase");
-    LoadSection(section, portfolio.gamesdigital);
-
-    section = document.getElementById("gamemisccase");
-    LoadSection(section, portfolio.gamesmisc);
-
-    section = document.getElementById("projdigitalcase");
-    LoadSection(section, portfolio.projectsdigital);
-
-    section = document.getElementById("projmisccase");
-    LoadSection(section, portfolio.projectsmisc);
-    
-  } else if (target.includes("experience")) {
-    var section = document.getElementById("workcase");
-    LoadSection(section, experience.work);
-
-    section = document.getElementById("leadershipcase");
-    LoadSection(section, experience.leadership);
-
-    section = document.getElementById("othercase");
-    LoadSection(section, experience.other);
-
-  }
-
-}
-
-function LoadProjectOverview(section) {
-  var sectionList = {};
-
-  for (element in project[section]) {
-
-  }
-}
-
-
-LoadPage();
+LoadEntries ();

@@ -1,9 +1,9 @@
 portfolio = 
 
 {
-"gamesdigital" : {
+"Gameplay Design" : {
 
-    "buildingvirtualworlds" : {
+    "spacebullnova" : {
         "title" : "Building Virtual Worlds",
         "subtitle" : "Class based around creating games in 2 week sprints.",
         "cardImage" : "images/bvw/cover.png",
@@ -13,7 +13,7 @@ portfolio =
         "technologies" : "Unity, Perforce"      
     },
 
-    "questaurant" : {
+    "badmintonsim" : {
         "title" : "Questaurant (incomplete)",
         "subtitle" : "A game designed to teach Chinese, natively.",
         "cardImage" : "images/clg/cover.png",
@@ -24,7 +24,7 @@ portfolio =
         "goal" : "Teach guests the linguistical nuances of Chinese through an interactive experience."      
     },
 
-    "badmintonsim" : {
+    "questaurant" : {
         "title" : "VR Badminton",
         "subtitle" : "Translating badmingon into a VR space utilizing the exergame framework",
         "cardImage" : "images/badminton/cover.jpg",
@@ -43,24 +43,14 @@ portfolio =
         "team" : "6 people",
         "timeline" : "5 weeks",
         "technologies" : "Unity, Occulus Rift"
-    },
-
-    "kingdombuilders" : {
-        "title" : "Kingdom Builders (incomplete)",
-        "subtitle" : "A twich channel idle game based around viewer intereractivity.",
-        "cardImage" : "images/tpgd/cover.png",
-        "role" : "Game Designer, Technology Expert",
-        "team" : "4 people",
-        "timeline" : "3 weeks",
-        "technologies" : "Twitch Extensions, Javascript, HTML"
     }
 
 },
 
 
-"gamesmisc" : {
+"FX Design" : {
 
-    "cetacia" : {
+    "springcleaning" : {
         "title" : "Cetaca",
         "subtitle" : "A pitch for a game oriented towards a team of industry experts.",
         "cardImage" : "images/botbs/cover.png",
@@ -72,7 +62,7 @@ portfolio =
 
 },  
 
-"projectsdigital" :{
+"Board Game Design" :{
 
     "mstco" : {
         "title" : "Majuro Stevedore and Terminal Company",

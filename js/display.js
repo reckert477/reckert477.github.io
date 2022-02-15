@@ -2,8 +2,9 @@
 function LoadEntries() {
   var content = document.getElementById("container");
 
+  var work = (window.location.pathname.includes("design")) ?  designwork : productionwork
 
-  for (section in portfolio) {
+  for (section in work) {
     console.log(section);
     var header = document.createElement("h2");
     header.innerHTML = section;
@@ -14,7 +15,7 @@ function LoadEntries() {
 
     var row;
     var left = true;
-    for (entry in portfolio[section]) {
+    for (entry in work[section]) {
       var card;
 
       if (left) {
@@ -26,7 +27,7 @@ function LoadEntries() {
         card = row.lastChild;
       }
 
-      CreateEntry(card, left, portfolio[section], entry);
+      CreateEntry(card, left, work[section], entry);
 
       left = !left;
     }

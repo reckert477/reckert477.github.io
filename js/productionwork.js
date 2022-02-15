@@ -1,11 +1,11 @@
-portfolio = 
+productionwork = 
 
 {
-"Gameplay Design" : {
+"Gameplay Production" : {
 
     "spacebullnova" : {
-        "title" : "Building Virtual Worlds",
-        "subtitle" : "Class based around creating games in 2 week sprints.",
+        "title" : "Spacebull Nova",
+        "subtitle" : "A space chasing game utilizing the Tobii Eye Tracker 5.",
         "cardImage" : "images/bvw/cover.png",
         "role" : "Programmer, Producer",
         "team" : "4-5 people",

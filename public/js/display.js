@@ -2,7 +2,7 @@
 function LoadEntries() {
   var content = document.getElementById("container");
 
-  var work = (window.location.pathname.includes("design")) ?  designwork : productionwork
+  var work = activePortfolio();
 
   for (section in work) {
     console.log(section);

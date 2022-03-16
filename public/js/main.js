@@ -18,6 +18,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function activePortfolio() {
+  return (window.location.pathname.includes("production")) ?  productionwork : designwork;
+}
 
 var displayedProjects = [];
 

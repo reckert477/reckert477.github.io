@@ -1,30 +1,20 @@
 //
 function LoadPage() {
   var url = window.location.pathname.split('/');
-  var key = url[2].substring(0, url[2].length - 5);
+  var key = url.pop();
+  key = key.substring(0, key.length - 5);
   console.log(key);
   var source;
+  var portfolio = activePortfolio();
 
-  if (url[1].includes("portfolio")) {
-    for (category in portfolio) {
-      console.log(portfolio[category]);
-      if (portfolio[category].hasOwnProperty(key)) {
-        source = portfolio[category][key];
-        console.log(source);
-        break;
-      }
+
+  for (category in portfolio) {
+    console.log(portfolio[category]);
+    if (portfolio[category].hasOwnProperty(key)) {
+      source = portfolio[category][key];
+      console.log(source);
+      break;
     }
-
-  }
-  else {
-    for (category in portfolio) {
-      if (category.hasOwnProperty(key)) {
-        source = category.key;
-        break;
-      }
-    }
-
-
   }
 
   for (target in source) {
@@ -32,7 +22,10 @@ function LoadPage() {
     if (target == "title" || target == "subtitle" || target == "cardImage") {
       component = document.getElementById(target);
       if (target == "cardImage") {
-        component.src = "../" + source.cardImage;
+        if (component.innerHTML.length == 0)
+        {
+          component.src =  source.cardImage;
+        } 
       } else {
         component.innerHTML = source[target];
       }

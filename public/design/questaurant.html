@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/show.css">
+  <base href="../">
 
 </head>
 <body>
@@ -29,35 +30,35 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../index.html#about">About</a>
+            <a class="nav-link" href="index.html#about">About</a>
           </li>
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="../portfolio.html" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolio.html" role="button" data-toggle="dropdown">
               Portfolio<span class="sr-only">(current)</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../portfolio.html#gamedigital">Games - Digital</a>
-              <a class="dropdown-item" href="../portfolio.html#gamemisc">Games - Miscellaneous</a>
+              <a class="dropdown-item" href="portfolio.html#gamedigital">Games - Digital</a>
+              <a class="dropdown-item" href="portfolio.html#gamemisc">Games - Miscellaneous</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="../portfolio.html#projdigital">Projects - Digital</a>
-              <a class="dropdown-item" href="../portfolio.html#projmisc">Projects - Miscellaneous</a>
+              <a class="dropdown-item" href="portfolio.html#projdigital">Projects - Digital</a>
+              <a class="dropdown-item" href="portfolio.html#projmisc">Projects - Miscellaneous</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../experience.html" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="experience.html" role="button" data-toggle="dropdown">
               Experience
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="../experience.html#work">Work</a>
-              <a class="dropdown-item" href="../experience.html#leadership">Leadership</a>
-              <a class="dropdown-item" href="../experience.html#other">Other</a>
+              <a class="dropdown-item" href="experience.html#work">Work</a>
+              <a class="dropdown-item" href="experience.html#leadership">Leadership</a>
+              <a class="dropdown-item" href="experience.html#other">Other</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -99,26 +100,29 @@
         <div class="col-8 ml-auto mr-auto ">
           <h3>Contributions</h3>
           <ul class="cotributions">
-            <li>Created and integrated audio and audio effects to guide player attention</li>
-            <li>Coded visual effects to guide player attention</li>
-            <li>Assisted in conceptual and level design</li>
+            <li>Collaboratively fleshed out interesting and conducive gameplay loop</li>
+            <li>Designed scenarios and interactions around dissertation constraints</li>
+            <li>Coded core gameplay and integrated assets as well as data collection</li>
+            <li>Set up interface with remote SQL Database</li>
           </ul>
 
 
           <h3>Overview</h3>
           <p>
-            Spring cleaning is an exercise in VR game design. The task was simple enough, take the classic lawn game of croquet and port it into VR with some degree of creativity. What emerged was a game about a ruthless cube ordering you, the garbage displosal person, to eject all of the trash (spheres) out of the spaceship. Of course, space themed obstacles are also involved, such as navigating zero gravity and vacuum segments. The player hit the trash through the space doors (wickets) to be ejected into space, without realizing they themselves are a sphere that must be ejected into space...
+            Questaurant is the result of a dissertation under Xiaofei Tang about game-based formulaic expressions learning. When learning a language, in this case Chinese, knowlege of context, norms, and social conventions is equally important in communication as vocabularly and grammar themselves. However, when learning a second language removed from its native context, conventions of speaking are often lost. Questaurant was thus an experiment for the feasibility of using games to teach such conventions through simulated environments and natural feedback.
           </p>
 
           <h3>Challenge(s)</h3>
           <p>
-            Spring Cleaning was my first experience working in VR, which made me realize the importance of UI and FX design, and that when people have more axis freedom, the game has to be more clever in the way it guides players' attention.<br>
-            In particular, we struggled largely on how to convey our main two mecanics, vacuums and anti-gravity segments. Like with puzzle games, getting the player to implicitly realize their abilities is a challenge. Because the puzzles were environmental based, a lot of attention was dedicated to ensuring the consistancy of environment with effects on the playing pieces, such as floating crates around the room or using particle effects to signify a vacuum.<br>
-            In addition to the issues of conveying game mechanics to players, we also had to deal with the rest of the VR environment design challenges, such at getting the player to look at intended game components such as the wicket ball that spawns at the player's feet. For 
+            Being an experiment, Questaurant had a significant amount of constraints.<br>
+            As an educational game, Questaurant already has to take a complex skill and balance the use of internal and external motivators to encourage players to master said skill. Modern educational games often lack an engaging flow as well as overly rely on external motivators, which make for less than stellar learning experiences.<br>
+            In addition, being the experiment to a control heavily restricted the avenues in which we could explore interesting interactions and flow. Since control was essentially a digital multiple choice question application, Questaurant had to provide the exact same experience sans “game components”. This created constraints such as giving every player the exact same experience, thereby eliminatng options of branching or extra practice, and limiting questions (moments of skill check) to those that could be written in a multiple choice or similar format. <br>
+            One particularly significant challenge we faced was how we would simulate real life contexts. Games are a format that constantly provide feedback to the player so that they can perform their next action, which is a natural fit to simulate feedback one would have gotten simply by interacting within the language's natural context. Regardless, we still run into the question of how we can improve on and create new feeback systems to stimulate learning.
           </p>
 
           <h3>Development</h3>
           <p>
+            Development began with simultaniously fleshing out ideas for core gameplay mechanic as well as environment. Our team strongly believed that cohesion and alignment between narrative, interaction and learning was critical for player investment, and is unfortunately where many educational games fall short due to the complex nature of language. We went through multiple iterations and ideas, but settled on the concept of "an outdated robot with a malfuntioning language chip" in order to mitigate any possible offense of the portrayal of the Chinese language.
             
           </p>
 
@@ -160,8 +164,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script src="../js/portfolio.js"></script>
-  <script src="../js/main.js"></script>
-  <script src="../js/loadentry.js"></script>
+  <script src="js/designwork.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/loadentry.js"></script>
 </body>
 </html>

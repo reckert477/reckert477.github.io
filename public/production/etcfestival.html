@@ -12,8 +12,9 @@
 
  
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/show.css">
+  <base href="../">
 
 </head>
 <body>
@@ -37,13 +38,10 @@
           <li class="nav-item">
             <a class="nav-link" href="design.html">Game Design</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="production.html">Production</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="experience.html">Other</a>
-          </li>
-          <li class="nav-item active">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
@@ -51,39 +49,52 @@
     </nav>
   <!-- End Header-->  
     <div class="content">
-      <h1>Let's get in touch!</h1><br>
 
-      <div class="col-8 ml-auto mr-auto">
-        <embed src="resources/Ryan Eckert Resume 2022 Game Design.pdf" height="800px" width="100%"></embed>
-         
-       
+      <!-- Initial Content is from portfolio.js -->  
+      <div class="row">
+        <div class="col ml-auto mr-auto">
+          <h1 id="title"></h1>
+        </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-4 ml-auto actionbox" id="emailbox">
-          <h2>Email</h2>
-          <form action="mail.php" method="post">
-            
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Your Name.."><br><br>           
 
-            <label for="email">Email Address</label><br>
-            <input type="text" id="email" name="email" placeholder="Your Email Address.."><br><br>
-
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" placeholder="Your Message.." style="height:200px"></textarea><br><br>
-
-            <input type="submit" class="btn btn-secondary" value="Submit">
-
-          </form>
+      <div class="row">
+        <div class="col ml-auto mr-auto">
+          <h2 id="subtitle"></h2>
+          
         </div>
-        <div class="col-4 mr-auto actionbox" id="resbox">
-          <h2>Resume</h2>
-          <a href="resources/Ryan Eckert 2019 Resume.pdf" role="button" download>
-            <button type="button" class="btn btn-secondary">Click to download resume</button>
-          </a>
+      </div>
+
+      <hr><br>
+
+      <div class="row">
+        <div class="col-4 ml-auto">
+          <img src="" id="cardImage">
         </div>
-      </div> -->
-    </div>
+
+        <div class="col-4 mr-auto">
+          <ul id="info">
+            <!-- Populated by loadentry.js, content from portfolio.js -->
+          </ul>
+        </div>
+      </div>
+
+      <br><hr>
+
+      <div id="detail" class="row">
+        <div class="col-8 ml-auto mr-auto ">
+          <h3>Contributions</h3>
+          <ul class="cotributions">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+
+        
+        </div>
+      </div>
+
     <button onclick="topFunction()" id="top" title="Go to top">Back to Top</button>
   <!-- End Body -->
   <!-- Footer -->    
@@ -93,14 +104,14 @@
       </div>
       <div class="row">
         <ul id="contact-options">
-          <li>
-            <a href="https://github.com/reckert477"><img src="images/github-logo-white.png"></a>
+          <li class="imgoption">
+            <a href="https://github.com/reckert477"><img src="../images/github-logo-white.png" alt="github"></a>
           </li>
-          <li>
-            <a href="https://www.linkedin.com/in/reck98/"><img src="images/linkedin-letters-white.png"></a>
+          <li class="imgoption">
+            <a href="https://www.linkedin.com/in/reck98/"><img src="../images/linkedin-letters-white.png" alt="linkedin"></a>
           </li>
-          <li>
-            <a href="mailto:reck98@gmail.com"><img src="images/envelope-white.png"></a>
+          <li class="imgoption">
+            <a href="mailto:reck98@gmail.com"><img src="../images/envelope-white.png" alt="mail"></a>
           </li>
         </ul>
       </div>
@@ -115,8 +126,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script src="js/experience.js"></script>
+  <script src="js/productionwork.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/display.js"></script>
+  <script src="js/loadentry.js"></script>
 </body>
 </html>

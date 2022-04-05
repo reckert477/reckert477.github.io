@@ -10,7 +10,7 @@ designwork =
         "role" : "Programmer, Producer",
         "team" : "6 people",
         "timeline" : "14 weeks",
-        "technologies" : "Unity, Github, Tobii Eye Tracker 5"      
+        "technologies" : "Unity, Tobii Eye Tracker 5, Github"      
     },
 
     "badmintonsim" : {
@@ -20,7 +20,7 @@ designwork =
         "role" : "Gameplay Programmer, Game Designer",
         "team" : "5 people",
         "timeline" : "14 weeks",
-        "technologies" : "Unity, MySQL Workbench"
+        "technologies" : "Unity, Oculus Quest"
     },
 
     "questaurant" : {
@@ -30,7 +30,17 @@ designwork =
         "role" : "Programmer, Sound Designer",
         "team" : "5 people",
         "timeline" : "8 months",
-        "technologies" : "Unity, MySQL Workbench"
+        "technologies" : "Unity, MySQL, Github"
+    },
+
+    "bvw" : {
+        "title" : "Building Virtual Worlds",
+        "subtitle" : "Building Unity games in 2 week sprints",
+        "cardImage" : "images/bvw/cover.png",
+        "role" : "Programmer, Producr",
+        "team" : "5 people",
+        "timeline" : "12 weeks",
+        "technologies" : "Unity, Oculus Quest, Air Console, Perforce"
     }
 
 },
@@ -38,13 +48,13 @@ designwork =
 "Level Design" : {
 
     "genshin" : {
-        "title" : "Spring Cleaning",
-        "subtitle" : "A pitch for a game oriented towards a team of industry experts.",
-        "cardImage" : "images/botbs/cover.png",
-        "role" : "Producer, Finance",
-        "team" : "5 people",
-        "timeline" : "5 weeks",
-        "technologies" : "Unity, Professional Communications"
+        "title" : "Genshin Map and Event Design",
+        "subtitle" : "An independant study in open world design.",
+        "cardImage" : "images/genshin/cover.png",
+        "role" : "Level Designer",
+        "team" : "Myself",
+        "timeline" : "3 weeks",
+        "technologies" : "Adobe Illustrator"
     }
 
 },
@@ -58,7 +68,7 @@ designwork =
         "role" : "FX Programmer, Sound Designer",
         "team" : "6 people",
         "timeline" : "5 weeks",
-        "technologies" : "Unity, Github"
+        "technologies" : "Unity, Oculus Rift, Github"
     }
 
 }

@@ -7,7 +7,8 @@ designwork =
         "title" : "Spacebull Nova",
         "subtitle" : "A space chasing game utilizing the Tobii Eye Tracker 5.",
         "cardImage" : "images/spacebullnova/cover.jpg",
-        "role" : "Programmer, Producer",
+        "about": "Spacebull Nova is a game built for Putrino Labs operating out of Mount Sinai Hospital, and is designed to bring the fun to quadriplegic patients by creating an experience that requires only an eye tracker to play! ",
+        "role" : "Lead Programmer, Gameplay Designer",
         "team" : "6 people",
         "timeline" : "14 weeks",
         "technologies" : "Unity, Tobii Eye Tracker 5, Github"      
@@ -16,9 +17,10 @@ designwork =
     "badmintonsim" : {
         "title" : "VR Badminton",
         "subtitle" : "Translating badmingon into a VR space utilizing the exergame framework.",
+        "about" : "How can you take a dynamic, physical experience in the real world, and translate it into a VR setting? Our team explored the exergame framework through implementing vr badminton.",
         "cardImage" : "images/badminton/cover.jpg",
-        "role" : "Gameplay Programmer, Game Designer",
-        "team" : "5 people",
+        "role" : "Lead Programmer",
+        "team" : "4 people",
         "timeline" : "14 weeks",
         "technologies" : "Unity, Oculus Quest"
     },
@@ -27,7 +29,7 @@ designwork =
         "title" : "Questaurant",
         "subtitle" : "A game designed to teach Chinese, natively.",
         "cardImage" : "images/clg/cover.png",
-        "role" : "Programmer, Sound Designer",
+        "role" : "Lead Programmer",
         "team" : "5 people",
         "timeline" : "8 months",
         "technologies" : "Unity, MySQL, Github"
@@ -37,7 +39,7 @@ designwork =
         "title" : "Building Virtual Worlds",
         "subtitle" : "Building Unity games in 2 week sprints",
         "cardImage" : "images/bvw/cover.png",
-        "role" : "Programmer, Producr",
+        "role" : "Programmer, Producer",
         "team" : "5 people",
         "timeline" : "12 weeks",
         "technologies" : "Unity, Oculus Quest, Air Console, Perforce"
@@ -56,6 +58,21 @@ designwork =
         "timeline" : "3 weeks",
         "technologies" : "Adobe Illustrator"
     }
+
+},
+
+"Experience Design" : {
+
+    "pyramidescape" : {
+        "title" : "Pyramid Escape",
+        "subtitle" : "Asymmetrical location-based experience for 2 players.",
+        "cardImage" : "images/springcleaning/cover.png",
+        "role" : "FX Programmer, Sound Designer",
+        "team" : "6 people",
+        "timeline" : "5 weeks",
+        "technologies" : "Unity, Oculus Rift, Github"
+    }
+
 
 },
 

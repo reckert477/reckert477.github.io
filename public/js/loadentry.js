@@ -41,3 +41,18 @@ function LoadPage() {
 }
 
 LoadPage();
+
+
+function ViewFullImage(e) {
+  $('#image-body').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail').removeClass('gallery') );
+  $('#full-image').modal('show');
+
+
+}
+
+function HideImage() {
+  $('#image-body img').remove();
+}
+
+$('img').click(function(e) {ViewFullImage(e)}); 
+$('#full-image').on('hidden.bs.modal',function() {HideImage()});

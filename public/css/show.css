@@ -35,6 +35,15 @@
   
 }
 
+.gallery-host{
+  justify-content: space-between;
+}
+
+.gallery {
+  max-width: 320px;
+  margin: auto;
+}
+
 p {
   text-indent: 2em;
 }

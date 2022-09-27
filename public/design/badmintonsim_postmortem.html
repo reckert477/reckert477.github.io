@@ -1,0 +1,108 @@
+          <h3>Background</h3>
+            <p>
+              The background of the badminton simulation project’s premise is simple: “how can you take a dynamic, physical experience in the real world, and translate it into a VR setting?” For this project, my team pitched 3 different sports to attempt to adapt to VR. In the end, we chose badminton as the sport has a strong alignment with VR interfaces. However, even with such strong alignment, it’s impossible to emulate badminton 1-to-1, which means there are still difficult design decisions that need to be made with regards to accuracy, integrity, and scope.
+
+            </p>
+
+            <h3>Challenges</h3>
+            <p>
+              The clear-cut challenge here is: “How do we adapt a physical activity to a VR space?” However, we can break this down into some more manageable sub-challenges. The aspects of adaptation were as follows:
+            </p>
+            <ul>
+              <li>How can we develop systems that supplement the key activities of badminton?</li>
+              <li>What role does feedback play in the adaptation of a physical activity in the VR space?</li>
+            </ul>
+            <p>
+              These challenges were based on research on Badminton itself as well as the Exergame framework, which highlights 4 different ways the body reacts to physical stimulus (responding, moving body, sensing, and relating body).
+            </p>
+
+            <h3>Research</h3>
+            <p>
+              The beginning of our project consisted of research in order to identify our goals and how we would go about achieving them. To this we had to understand a few concepts:
+            </p>
+            <ul>
+              <li>“What does it mean to play badminton? ”</li>
+              <li>“How does the body respond to stimulus and what is the Exertion Game (or exergame) framework”</li>
+              <li>and putting together, “What does it mean to emulate the feeling of an activity?”</li>
+            </ul>
+            <p>
+              When emulating an activity,  we had to identify the core pillars of play, and isolate how those parts would be interpreted by players of different skill levels. All these factors were crucial to replicating the experience of improving at badminton. To achieve this, we played badminton ourselves, received coaching from the badminton team, and interviewed members of the team. From this method, we identified three core pillars of badminton:
+            </p>
+            <ul>
+              <li>Shot Technique</li>
+              <li>Spacial awareness</li>
+              <li>Game pacing</li>
+            </ul>
+            <p>
+              Shot technique is the largest distinguishing factor of badminton. What sets badminton apart from other racket sports is how much control players have over the shuttlecock, relative to fast-paced badminton is. Beginners are often focused with the bare essentials, returning the bird over the net. Intermediate players start thinking about which shot they should take out of multiple options. Advanced players consider their shots in context of their strategies against their opponents’. 
+            </p>
+            <p>
+              Spatial awareness is the second most distinguishable factor of badminton. The court is just big enough that it requires players to make a choice between sprinting, lunging, and jumping to get to where the bird is. Players must also pay attention to  where the birdie is in relation to each player and the court. Beginner players are often focused on just getting to the bird and hitting it inside the opponent’s court. Intermediate players are more concerned with where they can place the bird in the opponent’s court such that it is disadvantageous to the opponent. Advanced players consider all of the above, and also how physiologically difficult would it be to reach the bird.
+            </p>
+
+            <h3>Development</h3>
+            <h4>Early Iteration</h4>
+            <p>
+              Though badminton aligned naturally with VR and VR controllers, a few questions arose during early development. I helped proctor a number of brownbox tests that helped answer the following key questions: 
+            </p>
+            <ul>
+              <li>Does the orientation of the VR controller in one’s hand interfere with real life badminton technique?</li>
+              <li>What sequence of exercises constitutes a good learning curve for novices?</li>
+              <li>How can we construct exercises with as little explicit scaffolding as possible in order to prevent novices from building bad habits?</li>
+            </ul>
+            <p>
+              During this stage, having a wide range of playtesters helped reinforce our conclusions in the research phase with regards to our pillars of badminton and progression of skills. Playtesters ranged in skill from experienced and novice badminton players, as well as players who had not played badminton, but had played other racquet sports, to players who had no experience with racquet sports of any kind. 
+            </p>
+            <h4>Core Development</h4>
+            <p>
+              As the sole programmer on the team, I was responsible for the majority of the Unity project. I also had to prioritize effectively in order to reach a deliverable at the end of the project duration. 
+            </p>
+            <p>
+              There were also several key setbacks that forced me to prioritize the physics of this project, as it related to collision detection between the birdie and the racquet, as well as the impact and trajectory of the birdie. 
+            </p>
+            <p>
+              Regarding collision detection, some context is necessary. Physics calculations in Unity are calculated in fixed intervals, typically 90 updates per second for VR. For a game as fast-paced as badminton, this means that birdie colliders can phase through racquet heads if the collision happens between update intervals. This can be mitigated with collision detection that interpolates. However, if the racquet collider is directly controlled by the player, the interpolation is ineffective because Unity only knows where the racquet is at each update, now how it got there. Instead, I had to create a collider that followed the racquet head, and only then was Unity able to properly register collision detection, because it then knew not only where the head was but how it got there, allowing it to make the necessary calculations. 
+
+            </p>
+            <p>
+              The other significant issue I found was with the impact and the trajectory of the birdie. The aerodynamics of a birdie is very complex due to its unique construction, which is very different from Unity’s default implementation. After a week or two of attempting to simulate the physics, I realized that I had to prioritize in order to reach other aspects of the project. Thus the focus shifted from “emulating badminton physics” to “finding an approximate mathematical function family that was close enough such that players could develop consistency and improve”. This realization and shift of mindset, although late, enabled the project to progress further.
+            </p>
+
+            <h4>Feedback Systems</h4>
+            <p>
+              The last phase of development, designing feedback systems, was the most experimental. While developing the system, our team realized that we were unable to address some of the key feedback systems that were crucial in the lens of the exergame framework, such as the sound, or the haptic feedback upon birdie impact. We tried to remedy this in two ways. 
+            </p>
+            <p>
+              The first was to look at the relevant body framework and see if there was any stimulus we could apply in lieu of the original stimulus. This worked great for the sensory body, where we could add different types of audio feedback, but less well for the motor control body. 
+            </p>
+            <p>
+              The other method was to look at the information that feedback system were intended to provide to the player and substitute that information through other means. In this case, both audio and haptics were intended to tell how much force was applied to the bird in order to develop consistency in hitting. One way that I was able to remedy this was to add a color trail on the birdie to indicate its  acceleration.
+            </p>
+            <p>
+              While I was attempting to substitute existing feedback systems, I also wanted to experiment with more augmented forms of feedback. For this segment, I took the most common novice and intermediate badminton errors and attempted to implement an augmented feedback that would help curb bad habits at early stages.
+            </p>
+            <p>
+              For novice players, the biggest mistake is the stroke, swinging one’s entire arm instead of just flicking the wrist. We implemented a system that would track the relative velocity of the player’s controller, as well as the head of their racquet. If the simulation detected both were traveling at roughly the same speed, it would give the player a notification to pay attention to their form.
+            </p>
+            <p>
+              For intermediate players, the biggest error is hitting shots that land out of bounds, or put themselves in bad positions. In order to build up the habit of loss-aversion, I implemented a negative feedback on the bridie landing out of bounds via sound effects. While both forms of augmented feedback were rudimentary and not thoroughly tested, they both showed enough initial promise to warrant more investigation on future projects.
+            </p>
+            <h3>Takeaways</h3>
+            <p>
+              The large takeaways from this project fall into two categories: the technical field experience, and the practical experience on completing projects.
+            </p>
+            <p>
+              On the technical side, I learned a lot about the importance of the exergame framework and how it shapes the way players learn in any experience that requires player movement. This becomes especially tricky in VR, when certain parts of the body are not as well targeted by the technology, so we had to find alternate ways of stimulating those parts of the body and alternate means of providing that feedback.
+            </p>
+            <p>
+              I also learned the importance of feedback systems. Feedback systems have to stimulate a number of senses in the player in order to provide a depth of knowledge of what is happening in the space the player is in, and how they can make use of that information to create judgements.
+            </p>
+            <p>
+              Finally, I learned a lot about physics engines and physics implementation in game engines. Regardless of the accuracy of any one physics engine, they will all require some way to know how to calculate the force being applied. These calculations can come from a number of sources, but whether it be a directly applied force vector or an object collision, the engine must have at least one complete set of information in order to properly do its job.
+            </p>
+            <p>
+              On the practical side, I learned about smarter and more effective playtesting. In particular, early playtesting can be done at any stage as long as it resolves a question about the project space. In fact, playtesting can be done with 0% of the project completed. Doing so means that playtesting can be carried out in parallel with development. Such early playtesting will bring clarity to the project and direction to development.
+            </p>
+            <p>
+              Finally, I learned lessons on prioritization and settling for completion instead of perfection. Each project has a core objective, and in the research space the core objective is usually a research question. The quicker a project can get to the crux of the the research question, the more time there is to investigate  the interesting elements of the design space. This leads to tough decisions when leading a project, such as knowing when a shortcut or approximation should be made, and how critical the accuracy of one component is to the project at large. Given that these are questions that have no answer until the end of the project, developing this sense has been extremely beneficial to my work on successive research projects.
+            </p>

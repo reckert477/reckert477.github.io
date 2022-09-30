@@ -11,7 +11,8 @@ designwork =
         "role" : "Lead Programmer, Gameplay Designer",
         "team" : "6 people",
         "timeline" : "14 weeks",
-        "technologies" : "Unity, Tobii Eye Tracker 5, Github"      
+        "technologies" : "Unity, Tobii Eye Tracker 5, Github",
+        "awards": "Gold Medal Winner of the 2022 International Serious Play Awards"      
     },
 
     "badmintonsim" : {

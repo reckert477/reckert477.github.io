@@ -18,7 +18,7 @@ designwork =
 
     "badmintonsim" : {
         "title" : "VR Badminton",
-        "subtitle" : "Translating badmingon into a VR space utilizing the exergame framework.",
+        "subtitle" : "Translating badminton into a VR space utilizing the exergame framework.",
         "about" : "How can you take a dynamic, physical experience in the real world, and translate it into a VR setting? Our team explored the exergame framework through implementing vr badminton.",
         "client" : "Dynamic Motion in Game Design (class)",
         "cardImage" : "images/badminton/cover.jpg",
@@ -33,7 +33,7 @@ designwork =
         "subtitle" : "A game designed to teach Chinese, natively.",
         "cardImage" : "images/clg/cover.png",
         "about": "Foreign language learning is difficult",
-        "client" : "PHD canidate Xiaofei Tang",
+        "client" : "PHD candidate Xiaofei Tang",
         "role" : "Lead Programmer",
         "team" : "5 people",
         "timeline" : "8 months",
@@ -54,19 +54,19 @@ designwork =
 
 },
 
-"Level Design" : {
+// "Level Design" : {
 
-    "genshin" : {
-        "title" : "Genshin Map and Event Design",
-        "subtitle" : "An independant study in open world design.",
-        "cardImage" : "images/genshin/cover.png",
-        "role" : "Level Designer",
-        "team" : "Myself",
-        "timeline" : "3 weeks",
-        "technologies" : "Adobe Illustrator"
-    }
+//     "genshin" : {
+//         "title" : "Genshin Map and Event Design",
+//         "subtitle" : "An independant study in open world design.",
+//         "cardImage" : "images/genshin/cover.png",
+//         "role" : "Level Designer",
+//         "team" : "Myself",
+//         "timeline" : "3 weeks",
+//         "technologies" : "Adobe Illustrator"
+//     }
 
-},
+// },
 
 "Experience Design" : {
 
@@ -74,10 +74,12 @@ designwork =
         "title" : "Pyramid Escape",
         "subtitle" : "Asymmetrical location-based experience for 2 players.",
         "cardImage" : "images/springcleaning/cover.png",
-        "role" : "FX Programmer, Sound Designer",
-        "team" : "6 people",
-        "timeline" : "5 weeks",
-        "technologies" : "Unity, Oculus Rift, Github"
+        "about": "",
+        "client" : "Building Virtual Worlds (class)",
+        "role" : "Lead Programmer, Experience Designer",
+        "team" : "3 people",
+        "timeline" : "6 weeks",
+        "technologies" : "Unity, RFID Sensors, Phidgets, DMX Lighting"
     }
 
 
@@ -89,6 +91,8 @@ designwork =
         "title" : "Spring Cleaning",
         "subtitle" : "Croquet in space...with a VR twist",
         "cardImage" : "images/springcleaning/cover.png",
+        "about": "",
+        "client" : "Research Issues in Game Design (class)",
         "role" : "FX Programmer, Sound Designer",
         "team" : "6 people",
         "timeline" : "5 weeks",

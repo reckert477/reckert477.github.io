@@ -93,26 +93,23 @@
 
           <h3>Overview</h3>
           <p>
-            Questaurant is the result of a dissertation under Xiaofei Tang about game-based formulaic expressions learning. When learning a language, in this case Chinese, knowlege of context, norms, and social conventions is equally important in communication as vocabularly and grammar themselves. However, when learning a second language removed from its native context, conventions of speaking are often lost. Questaurant was thus an experiment for the feasibility of using games to teach such conventions through simulated environments and natural feedback.
+            Questaurant is the result of a dissertation under Xiaofei Tang about game-based formulaic expressions learning. When learning a language, in this case Chinese, knowledge of context, norms, and social conventions is equally important in communication as vocabulary and grammar themselves. However, when learning a second language removed from its native context, conventions of speaking are often lost. Questaurant was thus an experiment for the feasibility of using games to teach such conventions through simulated environments and natural feedback.
           </p>
 
-          <h3>Challenge(s)</h3>
+          <h3>Design Considerations</h3>
           <p>
-            Being an experiment, Questaurant had a significant amount of constraints.<br>
-            As an educational game, Questaurant already has to take a complex skill and balance the use of internal and external motivators to encourage players to master said skill. Modern educational games often lack an engaging flow as well as overly rely on external motivators, which make for less than stellar learning experiences.<br>
-            In addition, being the experiment to a control heavily restricted the avenues in which we could explore interesting interactions and flow. Since control was essentially a digital multiple choice question application, Questaurant had to provide the exact same experience sans “game components”. This created constraints such as giving every player the exact same experience, thereby eliminatng options of branching or extra practice, and limiting questions (moments of skill check) to those that could be written in a multiple choice or similar format. <br>
-            One particularly significant challenge we faced was how we would simulate real life contexts. Games are a format that constantly provide feedback to the player so that they can perform their next action, which is a natural fit to simulate feedback one would have gotten simply by interacting within the language's natural context. Regardless, we still run into the question of how we can improve on and create new feeback systems to stimulate learning.
+            As a client project, there were a number of constraints on what kind of a game we were to make. Non negotiably, our game had to be liner and replicatable in a web based format. This was to ensure that it could still be compared to the control in a meaningful way. 
+          </p>
+          <p>
+            The biggest question in this project was how players would interface with Chinese as a game mechanic. We were largely locked into multiple choice as well as a form of fill in the blank or sentence construction as a form of player input. However, we were open ended on what Chinese did in this world. We played with concept such as using Chinese as sort of a spellcasting language, using it to blend into society / brainwash within a cyberpunk setting, or in the context of fast paced minigames. However, given that being able to distinguish context and norms is an important learning goal, we realized that placing the player in a relatively normal environment was a necessity. Falling back on Self Determination Theory, we decided that the drive to improve at Chinese needs the primary motivation, supported by the rest of the experience. 
+          </p>
+          <p>
+            As a secondary form of motivation, we decided to add an inconsequential minigame at the end of every Chinese language scenario. To ensure that this minigame supported the primary motivation, we made the maximum rewards responsive to the player's performance in the respective scenario to encourage the player to do better. In addition, the rewarded currency's only effect on the game is cosmetic. By keeping the rewards inconsequential, we ensure that the motivation for this segment is player intrinsic and thus wouldn't detract from any other player motivations while being able to target more motivating factors for the player.
           </p>
 
-          <h3>Development</h3>
+          <h3>Backend Design</h3>
           <p>
-            Development began with simultaniously fleshing out ideas for core gameplay mechanic as well as environment. Our team strongly believed that cohesion and alignment between narrative, interaction and learning was critical for player investment, and is unfortunately where many educational games fall short due to the complex nature of language. We went through multiple iterations and ideas, but settled on the concept of "an outdated robot with a malfuntioning language chip" in order to mitigate any possible offense of the portrayal of the Chinese language.
-            
-          </p>
-
-          <h3>Takeaways</h3>
-          <p>
-            
+            While having a dedicated backend was not in the original specifications, as the design became more fleshed out the importance of having one became more pronounced. The biggest reason was for data collection and aggregation, but creating one also enabled much more efficient pipelines for prototyping and development. In particular setting up a backend was beneficial for our scriptwriter, who was able to work in a spreadsheet like format and have their changes immediately effective in the game. Normalizing scenes, dialogues, and questions within the database also made it significantly easier to playtest scenario order, question order, and overall game flow and rearrange the script quickly and efficiently.
           </p>
         </div>
       </div>

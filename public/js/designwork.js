@@ -32,7 +32,7 @@ designwork =
         "title" : "Questaurant",
         "subtitle" : "A game designed to teach Chinese, natively.",
         "cardImage" : "images/clg/cover.png",
-        "about": "Foreign language learning is difficult",
+        "about": "Foreign language learning is difficult due to not just vocabulary and grammar, but also formalities and contextual appropriateness. Games can potentially assist with these lesser well defined language nuances.",
         "client" : "PHD candidate Xiaofei Tang",
         "role" : "Lead Programmer",
         "team" : "5 people",
@@ -44,12 +44,12 @@ designwork =
         "title" : "Building Virtual Worlds",
         "subtitle" : "Building Unity games in 2 week sprints",
         "cardImage" : "images/bvw/cover.png",
-        "about": "",
+        "about": "Rapid prototyping for a variety of different virtual experiences.",
         "client" : "Building Virtual Worlds (class)",
         "role" : "Programmer, Producer",
         "team" : "5 people",
         "timeline" : "12 weeks",
-        "technologies" : "Unity, Oculus Quest, Air Console, Perforce"
+        "technologies" : "Unity, Oculus Quest, Air Console, Perforce, Dlib Computer Vision"
     }
 
 },
@@ -68,13 +68,13 @@ designwork =
 
 // },
 
-"Experience Design" : {
+"Location Based Entertainment" : {
 
     "pyramidescape" : {
         "title" : "Pyramid Escape",
         "subtitle" : "Asymmetrical location-based experience for 2 players.",
-        "cardImage" : "images/springcleaning/cover.png",
-        "about": "",
+        "cardImage" : "images/pyramidescape/cover.jpg",
+        "about": "Building an experience for two thematically very different set pieces with vastly different interfaces in a single room.",
         "client" : "Building Virtual Worlds (class)",
         "role" : "Lead Programmer, Experience Designer",
         "team" : "3 people",
@@ -85,20 +85,20 @@ designwork =
 
 },
 
-"FX Design" : {
+// "FX Design" : {
 
-    "springcleaning" : {
-        "title" : "Spring Cleaning",
-        "subtitle" : "Croquet in space...with a VR twist",
-        "cardImage" : "images/springcleaning/cover.png",
-        "about": "",
-        "client" : "Research Issues in Game Design (class)",
-        "role" : "FX Programmer, Sound Designer",
-        "team" : "6 people",
-        "timeline" : "5 weeks",
-        "technologies" : "Unity, Oculus Rift, Github"
-    }
+//     "springcleaning" : {
+//         "title" : "Spring Cleaning",
+//         "subtitle" : "Croquet in space...with a VR twist",
+//         "cardImage" : "images/springcleaning/cover.png",
+//         "about": "",
+//         "client" : "Research Issues in Game Design (class)",
+//         "role" : "FX Programmer, Sound Designer",
+//         "team" : "6 people",
+//         "timeline" : "5 weeks",
+//         "technologies" : "Unity, Oculus Rift, Github"
+//     }
 
-}
+// }
 
 }

@@ -111,6 +111,9 @@
           <p>
             While having a dedicated backend was not in the original specifications, as the design became more fleshed out the importance of having one became more pronounced. The biggest reason was for data collection and aggregation, but creating one also enabled much more efficient pipelines for prototyping and development. In particular setting up a backend was beneficial for our scriptwriter, who was able to work in a spreadsheet like format and have their changes immediately effective in the game. Normalizing scenes, dialogues, and questions within the database also made it significantly easier to playtest scenario order, question order, and overall game flow and rearrange the script quickly and efficiently.
           </p>
+          <p>
+            Data was normalized to the third normal form (3NF) in order to allow for easy changes to the script as well as simple and non-redundant data entry from game playthroughs. Within the Unity, care was made to have atomic transactions such that even though playthroughs were proctored, avenues for cheating and data manipulation were mitigated.
+          </p>
         </div>
       </div>
 

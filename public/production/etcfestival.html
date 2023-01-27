@@ -92,8 +92,51 @@
             <li>Operated broadcast and directed camera operators / livestream hosts during the festival</li>
           </ul>
 
+          <h3>Overview</h3>
+          <p>
+            The ETC Festival is an event that occurs at the end of every fall semester in which ETC students showcase their work to the world. 2nd year students have an opportunity to showcase their semester projects, whereas 1st year students will have the opportunity to show of the variety of virtual experiences they have build throughout the semester. In lieu of having guests come in and experience the festival first hand, a livestream was desired to showcase what it would be like to play through each world and visit every project.
+          </p>
 
-        
+          <h3>Specifications</h3>
+          <p>
+            With the need for every festival world to be on-stream, by definition we needed a way to tap into the visuals of every world. Having one camera was critical to demonstrate what it was like to play the world, as well as show of the team members and their room. Sometimes a second camera would also be necessary to showcase a world. In addition, we needed to be able to switch from world to world quickly and smoothly in order to fit all 29 worlds in 1 night. With this in mind, I drafted the setup of mobile streaming stations that would be able to move to a room, interview the team and capture gameplay footage, and move on to the next world.
+          </p>
+          <img class="img-fluid" src="images/etcfestival/signal flow.jpg">
+
+          <h3>Testing</h3>
+          <p>
+            With a general game plan in mind, we needed to validate that the individual components of this system worked, and that when combined would result in natural operation that is low in complexity and room for error. The system was fundamentally based around the assumption that we could send video signal reliably through the network via RTMP, so naturally that was the first test we ran. 
+          </p>
+          <p>
+            Having validated the core assumption, we could then focus on individual aspects of each station. Here's a brief overview of things that needed to be tested.
+          </p>
+          <ul>
+            <li><b>Broadcasting Room</b></li>
+            <ul>
+              <li>Decide between Livestream Studio and OBS as a means of broadcasting to streaming services.</li>
+              <li>Test viability of using an external device for audio mixing.</li>
+              <li>Test workflows for switching between incoming video feeds.</li>
+            </ul>
+            <li><b>Streaming Cart</b></li>
+            <ul>
+              <li>Determine physical hardware & ensure that equipment can be easily mounted and moved.</li>
+              <li>Test plug & play reliability of Elgato capture cards.</li> 
+              <li>Check that worlds with unique hardware can still interface with the streaming cart.</li>
+            </ul>
+            <li><b>Anchor Room</b></li>
+            <ul>
+              <li>Test camera position and room layout for anchors.</li>
+              <li>Test communication systems between broadcasting room and anchors.</li>
+              <li>Check whether anchors are getting video feed from the broadcasting room with low enough latency.</li>
+            </ul>
+          </ul>
+
+          <h3>Outcome</h3>
+          <p>
+            Over all, the livestream was able to run relatively smoothly given the amount of complexity involved with running broadcasting festival for the first time. Truth be told, even with system testing there were a number of technical issues that still emerged. However, training broadcast and cart operators gave the team the flexibility to make adjustments on the fly. Having a spare streaming cart was another precaution that really paid of, since one of the default streaming carts ended up being offline for half of the event. Overall, this livestream was not only an engaging success, but also set a foundation for future ETC festivals to build off of.
+          </p>
+
+
         </div>
       </div>
 
